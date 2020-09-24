@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import icon from './assets/images/icon.png';
+import screenshot from './assets/images/app-screenshot.png';
 
 function App() {
   return (
@@ -124,7 +125,7 @@ function App() {
         <div class="flex-1 w-full bg-gray-800"></div>
       </div>
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
-        <img class="relative rounded-lg shadow-lg" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.png" alt="App screenshot" />
+        <img class="relative rounded-lg shadow-lg" src={screenshot} alt="App screenshot" />
       </div>
     </div>
   </div>
