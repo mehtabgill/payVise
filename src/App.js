@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import icon from './assets/images/icon.png';
 
 function App() {
   return (
@@ -8,19 +9,36 @@ function App() {
 <div>
 
 {/* Hero Sections */}
-<div class="relative bg-white overflow-hidden">
-  <div class="max-w-screen-xl mx-auto">
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
+<div class="bg-gray-50">
+  <div class="relative overflow-hidden">
+    <div class="block absolute inset-y-0 h-full w-full">
+      <div class="relative h-full">
+        <svg class="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full" width="404" height="784" fill="none" viewBox="0 0 404 784">
+          <defs>
+            <pattern id="e229dbec-10e9-49ee-8ec3-0286ca089edf" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="784" fill="url(#ad9a0a02-b58e-4a1d-8c36-1b649889af63)" />
+        </svg>
+        <svg class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4" width="404" height="784" fill="none" viewBox="0 0 404 784">
+          <defs>
+            <pattern id="d2a68204-c383-44b1-b99f-42ccff4e5365" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+            </pattern>
+          </defs>
+          <rect width="404" height="784" fill="url(#478e97d6-90df-4a89-8d63-30fdbb3c7e57)" />
+        </svg>
+      </div>
+    </div>
 
-      <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-        <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start">
-          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+    <div class="relative pt-6 pb-12 lg:pb-20">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+        <nav class="relative flex items-center justify-between sm:h-10 md:justify-center">
+          <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
             <div class="flex items-center justify-between w-full md:w-auto">
               <a href="#" aria-label="Home">
-                <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Logo" />
+                <img class="h-8 w-auto sm:h-10" src={icon} alt="Logo" />
               </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
@@ -31,26 +49,32 @@ function App() {
               </div>
             </div>
           </div>
-          <div class="hidden md:block md:ml-10 md:pr-4">
+          <div class="hidden md:flex md:space-x-10">
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Product</a>
-            <a href="#" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
-            <a href="#" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Marketplace</a>
-            <a href="#" class="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Company</a>
-            <a href="#" class="ml-8 font-medium text-indigo-600 hover:text-indigo-900 transition duration-150 ease-in-out">Log in</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Marketplace</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Company</a>
+          </div>
+          <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+            <span class="inline-flex rounded-md shadow">
+              <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out">
+                Log in
+              </a>
+            </span>
           </div>
         </nav>
       </div>
 
-      {/* <!--
-        Mobile menu, show/hide based on menu open state.
+      
+        {/* Mobile menu, show/hide based on menu open state.
 
         Entering: "duration-150 ease-out"
           From: "opacity-0 scale-95"
           To: "opacity-100 scale-100"
         Leaving: "duration-100 ease-in"
           From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-      --> */}
+          To: "opacity-0 scale-95" */}
+      
       <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
         <div class="rounded-lg shadow-md">
           <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
@@ -81,44 +105,60 @@ function App() {
         </div>
       </div>
 
-      <main class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-        <div class="sm:text-center lg:text-left">
+      <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:px-6 md:mt-16 lg:mt-20">
+        <div class="text-center">
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-            Data to enrich your
-            <br class="xl:hidden" />
-            <span class="text-indigo-600">Martial Arts Business</span>
+            Check-in data to enrich your
+            <br />
+            <span class="text-indigo-600">fitness business</span>
           </h2>
-          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+          <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+           No more manual logging. No more membership cards. Automatically track who visited your business, and when using QR codes.
           </p>
-          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-            <div class="rounded-md shadow">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-                Get started
-              </a>
-            </div>
-            <div class="mt-3 sm:mt-0 sm:ml-3">
-              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-                Live demo
-              </a>
-            </div>
-          </div>
         </div>
-      </main>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute inset-0 flex flex-col">
+        <div class="flex-1"></div>
+        <div class="flex-1 w-full bg-gray-800"></div>
+      </div>
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
+        <img class="relative rounded-lg shadow-lg" src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.png" alt="App screenshot" />
+      </div>
     </div>
   </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" />
-  </div>
+  {/* <div class="bg-gray-800">
+    <div class="max-w-screen-xl mx-auto pt-16 pb-20 px-4 sm:px-6 md:pb-24 lg:px-8">
+      <h3 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">Trusted by over 26,000 forward-thinking companies</h3>
+      <div class="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+        <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo.svg" alt="Tuple" />
+        </div>
+        <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo.svg" alt="Mirage" />
+        </div>
+        <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+          <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo.svg" alt="StaticKit" />
+        </div>
+        <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+          <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo.svg" alt="Transistor" />
+        </div>
+        <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+          <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo.svg" alt="Workcation" />
+        </div>
+      </div>
+    </div>
+  </div> */}
 </div>
 
 {/* Feature Sections */}
 <div class="py-12 bg-white">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p>
+      {/* <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p> */}
       <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        A better way to send money
+        A better way to track check-ins
       </h3>
       <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
@@ -137,30 +177,14 @@ function App() {
               </div>
             </div>
             <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Competitive exchange rates</h4>
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Save time and money</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+              Get back the time you spend on filling out manual attendance sheets or the money you spend printing membership cards.
               </p>
             </div>
           </div>
         </li>
-        <li class="mt-10 md:mt-0">
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">No hidden fees</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-              </p>
-            </div>
-          </div>
-        </li>
+
         <li class="mt-10 md:mt-0">
           <div class="flex">
             <div class="flex-shrink-0">
@@ -171,9 +195,9 @@ function App() {
               </div>
             </div>
             <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Transfers are instant</h4>
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Check-ins are instant</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+              Members simply scan their QR code upon entry. The date and time of their visit is logged automatically.
               </p>
             </div>
           </div>
@@ -188,9 +212,26 @@ function App() {
               </div>
             </div>
             <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Mobile notifications</h4>
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Contact tracing</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+              Keep your members safe of COVID-19 by ensuring contact tracing is possible.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="mt-10 md:mt-0">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Secure and private</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                Our security-first system ensures that your gym and member data is always safe. Data is encrypted when stored.
               </p>
             </div>
           </div>
@@ -321,16 +362,16 @@ function App() {
           Jobs
         </a>
       </div>
-      <div class="px-5 py-2">
+      {/* <div class="px-5 py-2">
         <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
           Press
         </a>
-      </div>
-      <div class="px-5 py-2">
+      </div> */}
+      {/* <div class="px-5 py-2">
         <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
           Accessibility
         </a>
-      </div>
+      </div> */}
       <div class="px-5 py-2">
         <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
           Partners
@@ -338,12 +379,12 @@ function App() {
       </div>
     </nav>
     <div class="mt-8 flex justify-center">
-      <a href="#" class="text-gray-400 hover:text-gray-500">
+      {/* <a href="#" class="text-gray-400 hover:text-gray-500">
         <span class="sr-only">Facebook</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
         </svg>
-      </a>
+      </a> */}
       <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
         <span class="sr-only">Instagram</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -356,22 +397,22 @@ function App() {
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
         </svg>
       </a>
-      <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+      {/* <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
         <span class="sr-only">GitHub</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
         </svg>
-      </a>
-      <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
+      </a> */}
+      {/* <a href="#" class="ml-6 text-gray-400 hover:text-gray-500">
         <span class="sr-only">Dribbble</span>
         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
           <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" />
         </svg>
-      </a>
+      </a> */}
     </div>
     <div class="mt-8">
       <p class="text-center text-base leading-6 text-gray-400">
-        &copy; 2020 Workflow, Inc. All rights reserved.
+        &copy; 2020 Memberly. All rights reserved.
       </p>
     </div>
   </div>
