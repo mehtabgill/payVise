@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import icon from './assets/images/icon.png';
 import screenshot from './assets/images/app-screenshot.png';
+import anmol from './assets/images/anmol.jpg';
+import mehtab from './assets/images/mehtab.jpg';
 
 function App() {
   return (
@@ -58,7 +60,7 @@ function App() {
           </div>
           <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
             <span class="inline-flex rounded-md shadow">
-              <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out">
+              <a href="https://app.usememberly.com/" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out">
                 Log in
               </a>
             </span>
@@ -109,12 +111,14 @@ function App() {
       <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:px-6 md:mt-16 lg:mt-20">
         <div class="text-center">
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-            Check-in data to enrich your
+            {/* Check-in data to enrich your */}
+            Build Safe & Healthy
             <br />
-            <span class="text-indigo-600">fitness business</span>
+            {/* <span class="text-indigo-600">gym or studio business</span> */}
+            <span class="text-indigo-600">Fitness Studios</span>
           </h2>
           <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-           No more manual logging. No more membership cards. Automatically track who visited your business, and when using QR codes.
+           No more paper logbook. No more membership cards. Memberly automatically tracks who visited your business, and when, using QR codes.
           </p>
         </div>
       </div>
@@ -159,32 +163,16 @@ function App() {
     <div class="lg:text-center">
       {/* <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p> */}
       <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        A better way to track check-ins
+        A better way to log check-ins
       </h3>
-      <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
+      {/* <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
-      </p>
+      </p> */}
     </div>
 
     <div class="mt-10">
       <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-        <li>
-          <div class="flex">
-            <div class="flex-shrink-0">
-              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              </div>
-            </div>
-            <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Save time and money</h4>
-              <p class="mt-2 text-base leading-6 text-gray-500">
-              Get back the time you spend on filling out manual attendance sheets or the money you spend printing membership cards.
-              </p>
-            </div>
-          </div>
-        </li>
+
 
         <li class="mt-10 md:mt-0">
           <div class="flex">
@@ -203,6 +191,25 @@ function App() {
             </div>
           </div>
         </li>
+
+        <li>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Save time and money</h4>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+              Get back your time spent filling out manual attendance sheets or the money spent printing membership cards.
+              </p>
+            </div>
+          </div>
+        </li>
+
         <li class="mt-10 md:mt-0">
           <div class="flex">
             <div class="flex-shrink-0">
@@ -247,7 +254,7 @@ function App() {
 {/* Frequently Asked Questions */}
 <div class="bg-white">
   <div class="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
-    <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
+    <h2 class="text-3xl  text-center leading-9 font-extrabold text-gray-900">
       Frequently asked questions
     </h2>
     <div class="mt-6 border-t-2 border-gray-100 pt-10">
@@ -320,6 +327,73 @@ function App() {
     </div>
   </div>
 </div>
+
+{/* Team */}
+<div class="bg-white">
+  <div class="max-w-screen-xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+    <div class="space-y-12">
+      <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
+        <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:tracking-tight sm:text-4xl">Meet our team</h2>
+        
+        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software to help fitness, martial arts, yoga, and dance studios in Canada.</p>
+      </div>
+      <ul class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl">
+        <li>
+          <div class="space-y-6">
+            <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={anmol} alt="" />
+            <div class="space-y-2">
+              <div class="text-lg leading-6 font-medium space-y-1">
+                <h4>Anmol Bajaj</h4>
+                <p class="text-indigo-600">Co-founder</p>
+              </div>
+              <ul class="flex justify-center space-x-5">
+                <li>
+                  <a href="https://twitter.com/anmolbajajnet" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/anmolbajajnet/" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="space-y-6">
+            <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={mehtab} alt="" />
+            <div class="space-y-2">
+              <div class="text-lg leading-6 font-medium space-y-1">
+                <h4>Mehtab Gill</h4>
+                <p class="text-indigo-600">Co-founder</p>
+              </div>
+              <ul class="flex justify-center space-x-5">
+                <li>
+                  <a href="https://www.linkedin.com/in/mehtab-gill-61b051125/" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
+                    <span class="sr-only">LinkedIn</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 {/* CTA Sections */}
 <div class="bg-white">
