@@ -393,7 +393,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-              We are on a mission to make it easier for you to run and manage your martial arts. That, and we wanted an excuse to train at other places.
+              We are on a mission to make it easier for you to run and manage your martial arts business. That, and we wanted an excuse to train at other places.
               </p>
             </dd>
           </div>
