@@ -67,6 +67,7 @@ export default class Hero extends Component {
           </div>
           <div class="hidden md:flex md:space-x-10">
             {/* <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Product</a> */}
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">How it works</a>
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">FAQs</a>
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">About us</a>
@@ -97,7 +98,7 @@ export default class Hero extends Component {
       <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
         <div class="px-5 pt-4 flex items-center justify-between">
           <div>
-            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="" />
+            <img class="h-8 w-auto" src={icon} alt="" />
           </div>
           <div class="-mr-2">
             <button type="button" onClick = {this.mobileHamburgerClickHandler} class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
@@ -108,6 +109,7 @@ export default class Hero extends Component {
           </div>
         </div>
         <div class="px-2 pt-2 pb-3">
+        <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">How it works</a>
           <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Features</a>
           <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">FAQs</a>
           <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">About Us</a>
