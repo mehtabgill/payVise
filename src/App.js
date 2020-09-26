@@ -53,10 +53,10 @@ function App() {
             </div>
           </div>
           <div class="hidden md:flex md:space-x-10">
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Product</a>
+            {/* <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Product</a> */}
             <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Marketplace</a>
-            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Company</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">FAQs</a>
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">About us</a>
           </div>
           <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
             <span class="inline-flex rounded-md shadow">
@@ -112,10 +112,10 @@ function App() {
         <div class="text-center">
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
             {/* Check-in data to enrich your */}
-            Build Safe & Healthy
+            Build Safer and Healthier
             <br />
             {/* <span class="text-indigo-600">gym or studio business</span> */}
-            <span class="text-indigo-600">Fitness Studios</span>
+            <span class="text-indigo-600">Martial Arts Studios</span>
           </h2>
           <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
            No more paper logbook. No more membership cards. Memberly automatically tracks who visited your business, and when, using QR codes.
@@ -160,10 +160,10 @@ function App() {
 {/* Feature Sections */}
 <div class="py-12 bg-white">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
+    <div class="text-center">
       {/* <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p> */}
       <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        A better way to log check-ins
+        A better way to log check-ins:
       </h3>
       {/* <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
@@ -173,12 +173,11 @@ function App() {
     <div class="mt-10">
       <ul class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
 
-
         <li class="mt-10 md:mt-0">
           <div class="flex">
             <div class="flex-shrink-0">
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
@@ -191,12 +190,11 @@ function App() {
             </div>
           </div>
         </li>
-
-        <li>
+        <li class="mt-10 md:mt-0">
           <div class="flex">
             <div class="flex-shrink-0">
               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
               </div>
@@ -209,6 +207,8 @@ function App() {
             </div>
           </div>
         </li>
+
+
 
         <li class="mt-10 md:mt-0">
           <div class="flex">
@@ -255,38 +255,38 @@ function App() {
 <div class="bg-white">
   <div class="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
     <h2 class="text-3xl  text-center leading-9 font-extrabold text-gray-900">
-      Frequently asked questions
+    Questions? We've got answers
     </h2>
     <div class="mt-6 border-t-2 border-gray-100 pt-10">
       <dl class="md:grid md:grid-cols-2 md:gap-8">
         <div>
           <div>
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              What's the best thing about Switzerland?
+              How are you different from other check-in products?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                Memberly is really easy to use. You don't need to download software or apps and your members never need to create accounts or remember passwords. Other solutions bundle unnecessary features you don't need to provide a great check-in experience.
               </p>
             </dd>
           </div>
           <div class="mt-12">
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              How do you make holy water?
+              How much does it cost?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+              Memberly costs <b>$29/month</b>. There are no contracts and you can cancel anytime because we believe in keeping our customer with a great product and exceptional customer support.
               </p>
             </dd>
           </div>
           <div class="mt-12">
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              What do you call someone with no body and no nose?
+              Will you setup everything for me?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                You got it. We will help you onboard all of your members at no extra cost.
               </p>
             </dd>
           </div>
@@ -294,31 +294,31 @@ function App() {
         <div class="mt-12 md:mt-0">
           <div>
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              Why do you never see elephants hiding in trees?
+              What if I need help?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                You can reach us by email at contact@usememberly.com or call us if you have any questions or need help along the way.
               </p>
             </dd>
           </div>
           <div class="mt-12">
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              Why can't you hear a pterodactyl go to the bathroom?
+              Do I need to install or download anything?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                Because the pee is silent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                Nope, Memberly works in your web browser so you can use it on any device with a camera. A laptop, tablet, or smartphone will all work fine.
               </p>
             </dd>
           </div>
           <div class="mt-12">
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              Why did the invisible man turn down the job offer?
+            Why are you building this?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                He couldn't see himself doing it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+              We are on a mission to make it easier for you to run and manage your martial arts. That, and we wanted an excuse to train at other places.
               </p>
             </dd>
           </div>
@@ -335,7 +335,7 @@ function App() {
       <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
         <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:tracking-tight sm:text-4xl">Meet our team</h2>
         
-        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software to help fitness, martial arts, yoga, and dance studios in Canada.</p>
+        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software for fitness, martial arts, yoga, and dance studios in Canada.</p>
       </div>
       <ul class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl">
         <li>
@@ -393,6 +393,11 @@ function App() {
     </div>
   </div>
 </div>
+
+{/* Pricing */}
+
+
+
 
 
 {/* CTA Sections */}
