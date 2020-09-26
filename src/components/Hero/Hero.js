@@ -341,7 +341,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                Memberly is really easy to use. You don't need to download software or apps and your members never need to create accounts or remember passwords. Other solutions bundle unnecessary features you don't need to provide a great check-in experience.
+                Memberly is really easy to use. You don't need to download software or apps and your members never need to create accounts or remember passwords. Other solutions bundle unnecessary features that you don't need to provide a great check-in experience.
               </p>
             </dd>
           </div>
@@ -351,7 +351,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-              Memberly costs <b>$29/month</b>. There are no contracts and you can cancel anytime because we believe in keeping our customer with a great product and exceptional customer support.
+              Memberly costs <b>$29/month</b>. There are no contracts and you can cancel anytime because we believe in keeping our customers with a great product and exceptional customer support.
               </p>
             </dd>
           </div>
@@ -410,7 +410,7 @@ export default class Hero extends Component {
       <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
         <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:tracking-tight sm:text-4xl">Meet our team</h2>
         
-        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software for fitness, martial arts, yoga, and dance studios in Canada.</p>
+        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software for fitness studios in Canada.</p>
       </div>
       <ul class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl">
         <li>
