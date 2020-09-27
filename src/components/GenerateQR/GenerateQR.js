@@ -24,7 +24,7 @@ export default class GenerateQR extends Component {
                 imageSrc: icon,
                 imageExcavate: true,
                 centerImage: true,
-                userInputValue: ''
+                userInputValue: null
        
         }
     }
