@@ -76,8 +76,10 @@ export default class GenerateQR extends Component {
 
          
         { memberId && 
-                  <QRCode
-                  value={this.state.value}
+                <div>
+                <h1>Member ID: {memberId}</h1>
+               <QRCode
+                  value={memberId}
                   size={this.state.size}
                   fgColor={this.state.fgColor}
                   bgColor={this.state.bgColor}
@@ -87,7 +89,7 @@ export default class GenerateQR extends Component {
                   imageSettings={
                     this.state.includeImage
                       ? {
-                        //   src: this.state.imageSrc,
+                          src: this.state.imageSrc,
                           height: this.state.imageH,
                           width: this.state.imageW,
                           x: this.state.centerImage ? null : this.state.imageX,
@@ -97,6 +99,9 @@ export default class GenerateQR extends Component {
                       : null
                   }
                 />
+
+                </div>
+   
         }
 
         {!memberId &&
@@ -108,7 +113,7 @@ export default class GenerateQR extends Component {
                     value={userInputValue}/>
            </div>
             
-            {this.state.userInputValue}
+            {/* {this.state.userInputValue} */}
             
             {this.state.userInputValue && 
              <QRCode
