@@ -5,6 +5,9 @@ import screenshot from './assets/images/app-screenshot.png';
 import anmol from './assets/images/anmol.jpg';
 import mehtab from './assets/images/mehtab.jpg';
 import Hero from './components/Hero/Hero';
+import GenerateQR from './components/GenerateQR/GenerateQR';
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
 
@@ -14,7 +17,14 @@ function App() {
 <div>
 
 {/* Hero Sections */}
-<Hero />
+<Router>
+      <Switch>
+        <Route path="/" exact component={Hero}/>
+        <Route path="/qr" component={GenerateQR}/>
+      </Switch>
+</Router>
+
+
 
 
 
