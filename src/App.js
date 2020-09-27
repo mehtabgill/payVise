@@ -20,7 +20,9 @@ function App() {
 <Router>
       <Switch>
         <Route path="/" exact component={Hero}/>
+        <Route path ="/qr/:memberId?" component={GenerateQR}/>
         <Route path="/qr" component={GenerateQR}/>
+        
       </Switch>
 </Router>
 

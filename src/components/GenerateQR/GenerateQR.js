@@ -1,19 +1,43 @@
 import React, { Component } from 'react';
 import icon from '../../assets/images/icon.png';
 import logo from '../../assets/images/logo.png';
+import QRCode from 'qrcode.react';
 
 export default class GenerateQR extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-            memberId: ''
-             
+    
+                value: '',
+                size: 300,
+                fgColor: '#000000',
+                bgColor: '#ffffff',
+                level: 'L',
+                renderAs: 'svg',
+                includeMargin: false,
+                includeImage: true,
+                imageH: 24,
+                imageW: 24,
+                imageX: 0,
+                imageY: 0,
+                imageSrc: icon,
+                imageExcavate: true,
+                centerImage: true,
+                userInputValue: ''
+       
         }
     }
     
+    onUserInput = (e) => {
+        this.setState({ [e.target.id]: e.target.value });
+
+        console.log(this.state.userInputValue)
+    }
 
     render() {
+        let memberId = this.props.match.params.memberId;
+        const { userInputValue } = this.state
         return (
             <div>
 
@@ -50,7 +74,77 @@ export default class GenerateQR extends Component {
         <div class="px-4 py-8 sm:px-0">
           <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
 
-          <h2>Insert Data here</h2>
+         
+        { memberId && 
+                  <QRCode
+                  value={this.state.value}
+                  size={this.state.size}
+                  fgColor={this.state.fgColor}
+                  bgColor={this.state.bgColor}
+                  level={this.state.level}
+                  renderAs={this.state.renderAs}
+                  includeMargin={this.state.includeMargin}
+                  imageSettings={
+                    this.state.includeImage
+                      ? {
+                        //   src: this.state.imageSrc,
+                          height: this.state.imageH,
+                          width: this.state.imageW,
+                          x: this.state.centerImage ? null : this.state.imageX,
+                          y: this.state.centerImage ? null : this.state.imageY,
+                          excavate: this.state.imageExcavate,
+                        }
+                      : null
+                  }
+                />
+        }
+
+        {!memberId &&
+           <div>
+           <label for="member_id" class="block text-sm font-medium leading-5 text-gray-700">Please enter your member ID: </label>
+           <div class="mt-1 relative rounded-md shadow-sm">
+             <input id="userInputValue" class="form-input block w-full sm:text-sm sm:leading-5" placeholder="ID: 1234" 
+                    onChange={this.onUserInput}
+                    value={userInputValue}/>
+           </div>
+            
+            {this.state.userInputValue}
+            
+            {this.state.userInputValue && 
+             <QRCode
+             value= {this.state.userInputValue}
+             size={this.state.size}
+             fgColor={this.state.fgColor}
+             bgColor={this.state.bgColor}
+             level={this.state.level}
+             renderAs={this.state.renderAs}
+             includeMargin={this.state.includeMargin}
+             imageSettings={
+               this.state.includeImage
+                 ? {
+                    //  src: this.state.imageSrc,
+                     height: this.state.imageH,
+                     width: this.state.imageW,
+                     x: this.state.centerImage ? null : this.state.imageX,
+                     y: this.state.centerImage ? null : this.state.imageY,
+                     excavate: this.state.imageExcavate,
+                   }
+                 : null
+             }
+           />
+            }
+          
+
+         </div>
+         
+         
+
+        
+        }
+
+          
+        
+
 
           </div>
         </div>
