@@ -4,7 +4,7 @@ import screenshot from '../../assets/images/app-screenshot.png';
 import anmol from '../../assets/images/anmol.jpg';
 import mehtab from '../../assets/images/mehtab.jpg';
 
-const textArray = ['Martial Arts Studio', 'Yoga Studio', 'Fitness Studio', 'Boxing Gym', 'Crossfit Gym'];
+const textArray = ['Martial Arts Studio', 'Jiu Jitsu Gym', 'MMA Gym', 'Karate Dojo'];
 
 export default class Hero extends Component {
     constructor(props) {
@@ -199,7 +199,7 @@ export default class Hero extends Component {
             <span class="text-indigo-600">{textThatChanges}</span>
           </h2>
           <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-           No more paper logbook. No more membership cards. Memberly automatically tracks who visited your business, and when, using QR codes.
+           No more paper logbook. No more membership cards. Memberly automatically tracks who visited your studio, and when, using QR codes.
           </p>
         </div>
       </div>
@@ -228,7 +228,7 @@ export default class Hero extends Component {
       <div>
  
         <div class="mt-5">
-          <h5 class="text-lg leading-6 font-medium text-gray-900">1) Add Gym Members</h5>
+          <h5 class="text-lg leading-6 font-medium text-gray-900">1) Add Members</h5>
           <p class="mt-2 text-base leading-6 text-gray-500">
             Add member details and we will generate and text them their unique QR code.
           </p>
@@ -244,7 +244,7 @@ export default class Hero extends Component {
         <div class="mt-5">
           <h5 class="text-lg leading-6 font-medium text-gray-900">2) Start Scanning</h5>
           <p class="mt-2 text-base leading-6 text-gray-500">
-            Place a laptop, phone, or tablet near the reception to allow members to check-in using their code.
+            Place a laptop, phone, or tablet near the reception to allow members to check-in using their code. 
           </p>
         </div>
       </div>
@@ -386,7 +386,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-              Memberly costs <b>$29/month</b>. There are no contracts and you can cancel anytime because we believe in keeping our customers with a great product and exceptional customer support.
+              We have a free 100 day risk-free trail. After that, Memberly costs <b>$29/month</b>. There are no contracts and you can cancel anytime because we believe in keeping our customers with a great product and exceptional customer support.
               </p>
             </dd>
           </div>
@@ -428,7 +428,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-              We are on a mission to make it easier for you to run and manage your fitness or martial arts studio. That, and we wanted an excuse to train at other places.
+              We are on a mission to make it easier for you to run and manage your  martial arts studio. That, and we wanted an excuse to train at other places.
               </p>
             </dd>
           </div>
