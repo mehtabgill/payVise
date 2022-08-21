@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import icon from '../../assets/images/icon.png';
-import screenshot from '../../assets/images/app-screenshot.png';
-import anmol from '../../assets/images/anmol.jpg';
+import icon from '../../assets/images/payvise.png';
+import screenshot from '../../assets/images/app.png';
+import anmol from '../../assets/images/anmol.jpeg';
 import mehtab from '../../assets/images/mehtab.jpg';
 
 const textArray = ['Martial Arts Studio', 'Jiu Jitsu Gym', 'MMA Gym', 'Karate Dojo'];
@@ -193,14 +193,13 @@ export default class Hero extends Component {
         <div class="text-center">
           <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
             {/* Check-in data to enrich your */}
-            Build a Safer and Healthier
+            Enable your customers to
             <br />
-            {/* <span class="text-indigo-600">gym or studio business</span> */}
-            <span class="text-indigo-600">{textThatChanges}</span>
+            <span class="text-indigo-600">Buy Now Pay Later</span>
+            {/* <span class="text-indigo-600">{textThatChanges}</span> */}
           </h2>
           <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-           No more paper logbook. No more membership cards. Memberly automatically tracks who visited your studio, and when, using QR codes.
-          </p>
+Increae your business revenue by taking Buy Now Play Later payments from your customers. You get paid the full amount upfront. For no fees.</p>
         </div>
       </div>
     </div>
@@ -228,9 +227,9 @@ export default class Hero extends Component {
       <div>
  
         <div class="mt-5">
-          <h5 class="text-lg leading-6 font-medium text-gray-900">1) Add Members</h5>
+          <h5 class="text-lg leading-6 font-medium text-gray-900">1) Sign-up</h5>
           <p class="mt-2 text-base leading-6 text-gray-500">
-            Add member details and we will generate and text them their unique QR code.
+            Sign-up with your business email. Get Free Demo.
           </p>
         </div>
       </div>
@@ -244,7 +243,7 @@ export default class Hero extends Component {
         <div class="mt-5">
           <h5 class="text-lg leading-6 font-medium text-gray-900">2) Start Scanning</h5>
           <p class="mt-2 text-base leading-6 text-gray-500">
-            Place a laptop, phone, or tablet near the reception to allow members to check-in using their code. 
+            We provide your unique QR code. Customers scan them to Buy-Now-Pay-Later. You get paid upfront.
           </p>
         </div>
       </div>
@@ -258,7 +257,7 @@ export default class Hero extends Component {
         <div class="mt-5">
           <h5 class="text-lg leading-6 font-medium text-gray-900">3) Sit back and relax</h5>
           <p class="mt-2 text-base leading-6 text-gray-500">
-            Member check-in information is automatically stored and can be accessed anytime.
+            Get instant payments. Grow your scale.
           </p>
         </div>
       </div>
@@ -272,7 +271,7 @@ export default class Hero extends Component {
     <div class="text-center">
       {/* <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p> */}
       <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        A better way to log check-ins:
+        A better way to take payments:
       </h3>
       {/* <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
         Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
@@ -292,9 +291,9 @@ export default class Hero extends Component {
               </div>
             </div>
             <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Check-ins are instant</h4>
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Payments are instant</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-              Members simply scan their QR code upon entry. The date and time of their visit is logged automatically.
+              Customers simply scan your QR code upon checkout. Log in with AfterPay and you get paid within minutes.
               </p>
             </div>
           </div>
@@ -309,9 +308,9 @@ export default class Hero extends Component {
               </div>
             </div>
             <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Save time and money</h4>
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Grow your scale and Ticket size</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-              Get back your time spent filling out manual attendance sheets or the money spent printing membership cards.
+              Expand your range of customers and increase your average order by providing them with BNPL payment methods.
               </p>
             </div>
           </div>
@@ -329,9 +328,9 @@ export default class Hero extends Component {
               </div>
             </div>
             <div class="ml-4">
-              <h4 class="text-lg leading-6 font-medium text-gray-900">Contact tracing</h4>
+              <h4 class="text-lg leading-6 font-medium text-gray-900">Customer experince tracing</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-              Keep your members safe of COVID-19 by ensuring contact tracing is possible.
+              We provide active interaction with customers to collect feedback.
               </p>
             </div>
           </div>
@@ -348,7 +347,7 @@ export default class Hero extends Component {
             <div class="ml-4">
               <h4 class="text-lg leading-6 font-medium text-gray-900">Secure and private</h4>
               <p class="mt-2 text-base leading-6 text-gray-500">
-                Our security-first system ensures that your gym and member data is always safe. Data is encrypted when stored.
+                Our security-first system ensures that your store and customer data is always safe. Data is encrypted when stored.
               </p>
             </div>
           </div>
@@ -372,11 +371,11 @@ export default class Hero extends Component {
         <div>
           <div>
             <dt class="text-lg leading-6 font-medium text-gray-900">
-              How are you different from other check-in products?
+              How are you different from other payment products?
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                Memberly is really easy to use. You don't need to download software or apps and your members never need to create accounts or remember passwords. Other solutions bundle unnecessary features that you don't need to provide a great check-in experience.
+                PayVise is really easy to use. You don't need to download software or apps and your members never need to create accounts or remember passwords. Other solutions require annual and hidden fees.
               </p>
             </dd>
           </div>
@@ -386,7 +385,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-              We have a free 100 day risk-free trail. After that, Memberly costs <b>$29/month</b>. There are no contracts and you can cancel anytime because we believe in keeping our customers with a great product and exceptional customer support.
+              PayVise costs <b>4.99% + 0.42 CAD</b>. There are no contracts and you can cancel anytime because we believe in keeping our customers with a great product and exceptional customer support.
               </p>
             </dd>
           </div>
@@ -396,7 +395,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                You got it. We will help you onboard all of your members at no extra cost.
+                You got it. We will help you onboard all of your customers at no extra cost.
               </p>
             </dd>
           </div>
@@ -408,7 +407,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                You can reach us by email at contact@usememberly.com or call us if you have any questions or need help along the way.
+                You can reach us by email at contact@usepayvise.com or call us if you have any questions or need help along the way.
               </p>
             </dd>
           </div>
@@ -418,7 +417,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-                Nope, Memberly works in your web browser so you can use it on any device with a camera. A laptop, tablet, or smartphone will all work fine.
+                Nope, PayVise works in your web browser so you can use it on any device with a camera. A laptop, tablet, or smartphone will all work fine.
               </p>
             </dd>
           </div>
@@ -428,7 +427,7 @@ export default class Hero extends Component {
             </dt>
             <dd class="mt-2">
               <p class="text-base leading-6 text-gray-500">
-              We are on a mission to make it easier for you to run and manage your  martial arts studio. That, and we wanted an excuse to train at other places.
+              We are on a mission to make it easier for you to run and manage your payments. That, and we wanted an excuse to get free samples.
               </p>
             </dd>
           </div>
@@ -445,7 +444,7 @@ export default class Hero extends Component {
       <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
         <h2 class="text-3xl leading-9 font-extrabold text-gray-900 sm:tracking-tight sm:text-4xl">Meet our team</h2>
         
-        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software for fitness studios in Canada.</p>
+        <p class="text-xl leading-7 text-gray-500">We're a small team from Vancouver dedicated to building the best software for Brick and Mortar in Canada.</p>
       </div>
       <ul class="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl">
         <li>
@@ -453,7 +452,7 @@ export default class Hero extends Component {
             <img class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={anmol} alt="" />
             <div class="space-y-2">
               <div class="text-lg leading-6 font-medium space-y-1">
-                <h4>Anmol Bajaj</h4>
+                <h4>Anubhav Khanna</h4>
                 <p class="text-indigo-600">Co-founder</p>
               </div>
               <ul class="flex justify-center space-x-5">
@@ -466,7 +465,7 @@ export default class Hero extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/anmolbajajnet/" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
+                  <a href="https://www.linkedin.com/in/anubhavkhanna1/" class="text-gray-400 hover:text-gray-500 transition ease-in-out duration-150">
                     <span class="sr-only">LinkedIn</span>
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
@@ -531,7 +530,7 @@ export default class Hero extends Component {
           Get in touch
         </h2>
         <p class="mt-3 text-lg leading-6 text-gray-500">
-        Fill out the form below and we will contact you within one business day.
+        Fill out the form and we will contact you within one business day.
         </p>
         <dl class="mt-8 text-base leading-6 text-gray-500">
           <div>
@@ -549,7 +548,7 @@ export default class Hero extends Component {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               <span class="ml-3">
-                +1 (604) 655-8766
+                +1 (236) 833-4517
               </span>
             </dd>
           </div>
@@ -561,7 +560,7 @@ export default class Hero extends Component {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <span class="ml-3">
-                contact@usememberly.com
+                contact@usepayvise.com
               </span>
             </dd>
           </div>
@@ -693,7 +692,7 @@ export default class Hero extends Component {
     </div>
     <div class="mt-8">
       <p class="text-center text-base leading-6 text-gray-400">
-        &copy; 2020 Memberly. All rights reserved.
+        &copy; 2022 PayVise. All rights reserved.
       </p>
     </div>
   </div>
